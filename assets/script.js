@@ -23,10 +23,8 @@ window.addEventListener('load', function () {
 	let boutonD = document.getElementById("fleche_droite");
 	boutonG.addEventListener('click', onClickLeft);
 	boutonD.addEventListener('click', onClickRight);
-})
 
-
-const dotContainer = document.getElementById("js-dots");
+	let dotContainer = document.getElementById("js-dots");
 let dotsArray = [];
 
 for (let i = 0; i <= slides.length - 1; i++) {
@@ -50,7 +48,6 @@ function onClickRight() {
 		dotsArray[0].classList.add("dot_selected");
 		currentDot = 0;
 	}
-	alert("Bouton cliqué");
 }
 
 function onClickLeft() {
@@ -65,5 +62,9 @@ function onClickLeft() {
 		currentDot = 3;
 	}
 }
+})
+
+
+
 
 
