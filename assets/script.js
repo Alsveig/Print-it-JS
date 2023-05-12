@@ -37,7 +37,7 @@ window.addEventListener('load', function () {
 	let bannerText = document.getElementById("banner").querySelector("p");
 	bannerText.innerHTML = slides[0].tagLine;
 
-	for (let i = 0; i <= slides.length - 1; i++) {
+	for (let i = 0; i < slides.length; i++) {
 		dotsArray[i] = document.createElement("span");
 		dotsArray[i].classList.add("dot");
 		dotContainer.appendChild(dotsArray[i]);
